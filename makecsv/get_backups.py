@@ -1,13 +1,15 @@
 import paramiko
-import scp
 import pathlib
 from datetime import datetime
 import sys
+#import os
 
 class GetBackups():
     # ローカルパス
     backup_dir = str(datetime.now().strftime('backup_%Y%m%d_%H%M%S'))
-    pathlib.Path('./backups/'+backup_dir).resolve().mkdir()
+    pathlib.Path('./backups/' + backup_dir).resolve().mkdir()
+    #p = pathlib.Path('./backups/' + backup_dir).resolve()
+    #os.mkdir(str(p))
     
     def __init__(self,ip='192.168.1.254',remote_path='/home/conprosys/bacnet/', local_path=str(pathlib.Path('./backups/').resolve().joinpath(backup_dir))):
         # リモートパス
@@ -57,8 +59,8 @@ class GetBackups():
             print("ERROR -- " + cmd)
             result = False
         return result
-    
-    
+
+
     def get(self):
         # ssh clientオブジェクト(ssh)を作る・・・
         with paramiko.SSHClient() as ssh:
