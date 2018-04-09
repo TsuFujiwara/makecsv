@@ -1,0 +1,26 @@
+=======
+makecsv
+=======
+
+
+
+
+
+
+make csv from sqlite3 of the logging GW
+
+
+
+Features
+--------
+
+* TODO
+* make input_ip GUI
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
