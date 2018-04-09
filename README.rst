@@ -15,7 +15,6 @@ Features
 --------
 
 * TODO
-* make input_ip GUI
 
 Credits
 -------
